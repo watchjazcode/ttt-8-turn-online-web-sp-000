@@ -36,9 +36,9 @@ def turn(board)
   index = input_to_index(user_input) #taking user input changing to array index
   if valid_move?(board, index) # if move is valid
      move(board, index, "X") # perform the move, with arguments (pieces that we need)
-     display_board(board) # 
-  else
-    turn(board)
+     display_board(board) #display board that now has X
+  else #if input is invalid
+    turn(board) #ask player to make a move again
   end
 end  
   
