@@ -32,11 +32,11 @@ end
 
 def turn(board) 
   puts "Please enter 1-9:" #asking for user input
-  user_input = gets.strip #taking user input and striping it of whitespace
-  index = input_to_index(user_input)
-  if valid_move?(board, index)
-     move(board, index, "X")
-     display_board(board)
+  user_input = gets.strip #using gets to get user input and striping it of whitespace
+  index = input_to_index(user_input) #taking user input changing to array index
+  if valid_move?(board, index) # if move is valid
+     move(board, index, "X") # perform the move, with arguments (pieces that we need)
+     display_board(board) # 
   else
     turn(board)
   end
