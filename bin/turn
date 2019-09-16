@@ -1,2 +1,2 @@
 #!/usr/bin/env ruby
-require_
+require_relative '../lib/turn'
