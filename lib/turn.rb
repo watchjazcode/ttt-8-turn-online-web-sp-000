@@ -30,9 +30,9 @@ def valid_move?(board, index)
   end
 end
 
-def turn(board)
-  puts "Please enter 1-9:"
-  user_input = gets.strip
+def turn(board) 
+  puts "Please enter 1-9:" #asking for user input
+  user_input = gets.strip #taking user input and striping it of whitespace
   index = input_to_index(user_input)
   if valid_move?(board, index)
      move(board, index, "X")
