@@ -14,3 +14,6 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+def move(board_array, index, character)
+  board_array[index] = character
+end
